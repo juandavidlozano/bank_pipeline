@@ -102,6 +102,26 @@ Below is the visual representation of the Airflow DAG pipeline used for orchestr
 
 ---
 
+## **Front-End Integration**
+The processed data is visualized using **AWS QuickSight**, which provides both a traditional dashboard and an **LLM-style query interface** for conversational analytics.
+
+### **Features**:
+- **QuickSight Dashboard**:
+  - Visualizes trends, asset tiers, and key statistics.
+  - Enables business users to quickly understand the financial health of banks.
+
+- **Chat-Based Querying with QuickSight Q**:
+  - Allows users to ask natural language questions like:
+    - *"How many banks have assets between $500M and $1B?"*
+    - *"Which banks had a decline in deposits last quarter?"*
+  - Uses Amazon QuickSight’s **Q** feature to provide instant, AI-driven insights.
+
+### **GIF Demonstration**:
+Below is a demonstration of the QuickSight Q feature in action:
+
+![QuickSight Front-End](pictures/front_end.gif)
+---
+
 ## **Next Steps**
 - Integrate credit union data once the API is available.
 - Add more insights, such as trends over time and regional comparisons.
