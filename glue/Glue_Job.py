@@ -11,10 +11,10 @@ from pyspark.sql.types import StringType
 
 # AWS Glue Configuration
 AWS_REGION = 'us-east-1'
-S3_BUCKET_NAME = 'alpharank'  # Replace with your actual bucket name if different
+S3_BUCKET_NAME = 'alpharank' 
 INSTITUTIONS_PREFIX = 'institutions/'
 FINANCIALS_PREFIX = 'financials/'
-PROCESSED_PREFIX = 'processed_data/'  # Ensure this ends with '/'
+PROCESSED_PREFIX = 'processed_data/'
 OUTPUT_FILE_NAME = 'merged_data.csv'
 
 # Hardcoded job name
