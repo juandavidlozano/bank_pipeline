@@ -142,3 +142,13 @@ Below is a demonstration of the QuickSight Q feature in action:
    FROM financials
    WHERE type = 'Bank'
    GROUP BY asset_tier;
+
+
+## **Cost Analysis**
+The current cost for running the pipeline for 2 days is approximately **$2.9**, with the following breakdown:
+- **Airflow EC2 Instance**: **~$2/day** (most significant cost contributor).
+- Other services, including S3 and AWS Glue, contribute to the remaining costs.
+
+### Cost Breakdown Visualization:
+![Cost Breakdown](pictures/cost.jpg)
+   
