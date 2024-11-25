@@ -22,6 +22,9 @@ Develop a data pipeline to ingest and normalize financial data from publicly acc
 - **Storage**: AWS S3
 - **ETL**: AWS Glue
 - **Automation**: Lambda functions for conditional execution and monitoring.
+- **Data Crawling**: AWS Glue Crawler to crawl new files in S3 and catalog them in AWS Glue Data Catalog.
+- **Querying**: Athena as the data warehouse for running queries on processed and cataloged data.
+- **Visualization**: Connect Athena to AWS QuickSight for business intelligence and analytics.
 
 ### **Airflow DAG Example**
 Below is the visual representation of the Airflow DAG pipeline used for orchestrating the tasks in this pipeline:
@@ -57,13 +60,18 @@ Below is the visual representation of the Airflow DAG pipeline used for orchestr
      - **Charter Number**, **Web Domain**, **City**, **State**.
      - **Total Assets** and **Total Deposits** at the end of each quarter.
 
-6. **Insights Generation**
+6. **Glue Crawler and Athena Integration**
+   - Trigger an AWS Glue Crawler to scan and catalog the processed data in S3.
+   - Use Athena as the data warehouse to run SQL queries on the cataloged data.
+
+7. **Insights Generation**
    - Store the processed data in AWS S3 for analytics.
    - Provide database queries to answer the following:
      - Number of active banks by asset tier (e.g., assets between $500M and $1B).
      - Identify banks with >5% decline in deposits last quarter.
+   - Connect Athena to AWS QuickSight for visualizing the insights.
 
-7. **End Task**
+8. **End Task**
    - Conclude the DAG execution.
 
 ---
@@ -79,10 +87,16 @@ Below is the visual representation of the Airflow DAG pipeline used for orchestr
 - **AWS Glue**:
   - Performs transformations to normalize and aggregate financial data.
   - Prepares data for analytics and visualization.
+  - **Glue Crawler**:
+    - Scans new files in S3 and catalogs them into the AWS Glue Data Catalog for querying.
+
+- **Athena**:
+  - Serves as the data warehouse for running SQL queries on the processed and cataloged data.
+  - Enables integration with AWS QuickSight for reporting and analytics.
 
 - **Lambda Functions**:
   - Check for data availability or differences.
-  - Trigger data fetching and transformations dynamically.
+  - Trigger data fetching, transformations, and Glue Crawlers dynamically.
 
 - **AWS S3**:
   - Stores raw and processed data securely for analytics.
