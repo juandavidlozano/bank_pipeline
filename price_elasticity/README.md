@@ -230,15 +230,15 @@ price_elasticity/
 ## 👥 Team & Expertise
 
 **Marketing Analytics Team**
-- Senior Data Scientist: Econometric modeling
+- Senior Data Scientist: Juan David Lozano
 - Business Analyst: Strategic interpretation
 - Data Engineer: Pipeline automation
 
 ## 📞 Support & Contact
 
 For technical questions or business inquiries:
-- **Technical Lead**: analytics@company.com
-- **Business Stakeholder**: marketing@company.com
+- **Technical Lead**: juandavidlozano@hotmail.com
+- **Business Stakeholder**: juandavidlozano@hotmail.com
 - **Project Documentation**: [Internal Wiki Link]
 
 ---

@@ -5,8 +5,8 @@ for marketing analytics and strategic pricing decisions.
 """
 
 __version__ = "2.1.0"
-__author__ = "Marketing Analytics Team"
-__email__ = "analytics@company.com"
+__author__ = "Juan David Lozano"
+__email__ = "juandavidlozano@hotmail.com"
 
 from .elasticity_models import ElasticityAnalyzer
 from .data_processor import DataProcessor

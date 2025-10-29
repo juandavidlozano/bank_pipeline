@@ -191,14 +191,11 @@ graph LR
 ### Statistical Model Quality
 
 ```mermaid
-bar chart
+xychart-beta
     title "Model Fit Quality (R-squared)"
     x-axis [Premium, Mid-Tier, Value]
     y-axis "R-squared" 0 --> 1
-    
-    bar [0.87]
-    bar [0.83]
-    bar [0.91]
+    bar [0.87, 0.83, 0.91]
 ```
 
 **Validation Results:**
@@ -501,7 +498,7 @@ flowchart TD
 
 **Prepared by:** Marketing Analytics Team  
 **Date:** October 2025  
-**Contact:** analytics@company.com  
+**Contact:** juandavidlozano@hotmail.com  
 **Classification:** Internal Use Only
 
 ---

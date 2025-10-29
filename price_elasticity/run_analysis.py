@@ -444,7 +444,7 @@ def main():
     
     if results:
         print("\n✅ Analysis completed successfully!")
-        print("📧 Contact analytics@company.com for questions")
+        print("📧 Contact juandavidlozano@hotmail.com for questions")
     else:
         print("\n❌ Analysis failed. Please check error messages above.")
         sys.exit(1)
