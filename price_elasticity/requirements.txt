@@ -1,0 +1,45 @@
+# Price Elasticity Analytics - Python Dependencies
+
+# Core Data Analysis
+pandas>=1.5.0
+numpy>=1.21.0
+
+# Statistical Analysis
+scipy>=1.9.0
+statsmodels>=0.13.0
+
+# Machine Learning
+scikit-learn>=1.1.0
+
+# Data Visualization
+matplotlib>=3.5.0
+seaborn>=0.11.0
+plotly>=5.10.0
+
+# Additional Analytics
+linearmodels>=4.27
+
+# Jupyter and Interactive Development
+jupyter>=1.0.0
+notebook>=6.4.0
+ipywidgets>=7.7.0
+
+# Utility Libraries
+openpyxl>=3.0.0  # Excel file support
+xlsxwriter>=3.0.0  # Excel writing
+python-dateutil>=2.8.0
+
+# Optional: Advanced Analytics
+# uncomment if needed for production deployment
+# ray>=2.0.0  # Distributed computing
+# dask>=2022.8.0  # Parallel computing
+# numba>=0.56.0  # JIT compilation
+
+# Development and Testing
+pytest>=7.0.0
+black>=22.0.0
+flake8>=4.0.0
+
+# Documentation
+sphinx>=4.0.0
+sphinx-rtd-theme>=1.0.0
